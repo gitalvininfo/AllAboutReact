@@ -19,7 +19,8 @@ export default function App() {
     const cardElements = data.map((item) => {
         return <Card
             key={item.id}
-            item={item} />
+            {...item}
+        />
     })
     return (
         <div>
