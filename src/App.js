@@ -1,34 +1,24 @@
-import React from "react"
-import Card from "./components/Card"
-import Navbar from "./components/Navbar"
-import data from './data';
-import Hero from './components/Hero';
-/*
-Challenge:
 
-- import the array of data from data.js
-- map over the array to create <Card /> components
-- display the array of card components under the navbar
-  (in place of the current <Card /> component)
 
-Note: We haven't styled the group of components yet, so they'll
-still be block elements, stacked vertically. We'll add styling later.
-*/
+import React from "react";
+import Header from "./components/Header";
+import Card from "./components/Card";
+import './style.css';
+import data from "./data";
 
 export default function App() {
-    const cardElements = data.map((item) => {
-        return <Card
-            key={item.id}
-            {...item}
-        />
+
+    const cardElements = data.map(item => {
+        return <Card {...item} />
     })
+
     return (
-        <div>
-            <Navbar />
-            <Hero />
-            <section className="cards-list">
+        <div className="app-container">
+            <Header />
+            <div className="cards-container">
                 {cardElements}
-            </section>
+            </div>
+
         </div>
     )
 }

@@ -1,26 +1,26 @@
 import React from "react"
 
+
 export default function Card(props) {
-    let badgeText = null
-
-    if (props.openSpots === 0) {
-        badgeText = "SOLD OUT"
-    } else if (props.location === "Online") {
-        badgeText = "ONLINEEEEE"
-    }
-
     return (
-        <div className="card">
-            {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={`../images/${props.coverImg}`} className="card--image" />
-            <div className="card--stats">
-                <img src="../images/star.png" className="card--star" />
-                <span>{props.stats.rating}</span>
-                <span className="gray">({props.stats.reviewCount}) • </span>
-                <span className="gray">{props.location}</span>
+        <div>
+            <div className="card-container">
+                <img src={props.imageUrl} className="card--image" />
+                <div className="card--right-content">
+                    <div>
+                        <span className="card--place">{props.location}</span>
+                        <span className="card--view-google-map">View on Google Maps</span>
+                    </div>
+                    <h3 className="card--tourist-spot">{props.title}</h3>
+
+                    <p className="card--date">{props.startDate} - {props.endDate}</p>
+
+                    <p className="card--content">
+                        {props.description}
+                    </p>
+                </div>
             </div>
-            <p>{props.title}</p>
-            <p><span className="bold">From ${props.price}</span> / person</p>
+            <hr />
         </div>
     )
 }
