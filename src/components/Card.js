@@ -6,7 +6,7 @@ export default function Card(props) {
     if (props.openSpots === 0) {
         badgeText = "SOLD OUT"
     } else if (props.location === "Online") {
-        badgeText = "ONLINE"
+        badgeText = "ONLINEEEEE"
     }
 
     return (
