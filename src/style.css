@@ -14,109 +14,14 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.card-main-container {
-    width: 550px;
-    background: #23252C;
-    padding: 44px 117px;
-}
-
-.card-container {
-    margin: 0 auto;
-    max-width: 317px;
-    width: 317px;
-    background: #F5F5F5;
-}
-
-.details-content-container {
-    padding: 0 35px;
-}
-
-.profile-img-container {
-    background-image: url('./images/user.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    height: 317px;
-}
-
-.profile-container {
-    width: 100%;
-}
-
-.profile-name {
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 6px;
-    margin-top: 20px;
-}
-
-.profile-job {
-    font-weight: 400;
-    font-size: 12.8px;
-    line-height: 15px;
-    text-align: center;
-    color: #F47D27;
-    margin: 0;
-}
-
-.profile-website {
-    font-weight: 400;
-    font-size: 10.24px;
-    text-align: center;
-    color: #4A4E74;
-}
-
-
-.button-container {
+nav {
+    height: 70px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 17px;
-}
-
-.email-button {
+    padding: 20px 36px;
     background: #FFFFFF;
-    border: 1px solid #D1D5DB;
-    box-sizing: border-box;    
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    padding: 9px;
-    width: 115px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.linkedin-button {
-    color: #FFFFFF;
-    background: #297FE5;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    padding: 9px;
-    width: 115px;
-    border: 0;
-}
-
-.about-title, .interest-title {
-    margin-top: 25px;
-}
-
-
-.about-title, .interest-title  {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: #2B283A;
-    margin-bottom: 5px;
-}
-
-.about-content, .interest-content {
-    font-weight: 400;
-    font-size: 10.24px;
-    line-height: 150%;
-    color: #4A4E74;
-}
-
-
-.footer-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 31px;
-    background: #D5D4D8;
-    padding: 19px;
+.nav--logo {
+    max-width: 100px;
 }

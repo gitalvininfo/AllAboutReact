@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './components/Card';
-import './style.css';
+import App from './App';
+import './style.css'
 
 ReactDOM.render(
-    <Card />,
+    <App />,
     document.getElementById("root")
 )
